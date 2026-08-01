@@ -1,7 +1,26 @@
 aid: playcurio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/playcurio.png
 name: Playcurio
-description: Playcurio is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  PlayCurio is a Seoul-based educational technology company that builds AR (augmented reality)
+  play-learning products for children, pairing physical educational tools with digital content.
+  Its catalog includes AR titles such as Curio Safari, Phonics Pop, Dictionary Pop, and Math Mates,
+  alongside a content-IP business spanning characters like Detective Pete, Dino Tales, and 100+ Curio
+  Safari animals, plus B2B production services (character development, 2D/3D animation, UI/UX, and
+  live-action video). PlayCurio is consumer- and partnership-facing and publishes no developer API,
+  developer portal, SDKs, or API documentation. Surfaced via the 500 Global portfolio and enriched
+  here; a domain-security probe of play-curio.com is the only technical artifact this pass produced.
 url: https://raw.githubusercontent.com/api-evangelist/playcurio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +30,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Education
+- Augmented Reality
+- EdTech
+- Children
+- Content IP
+- Animation
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/playcurio-domain-security.yml
 - type: Website
   url: https://play-curio.com
